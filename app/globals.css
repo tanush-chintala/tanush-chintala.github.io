@@ -4,8 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated background to Georgia Tech gold */
-  --background: oklch(0.75 0.08 85);
+  --background: oklch(0.99 0 0);
   --foreground: oklch(0.15 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.15 0 0);
@@ -44,8 +43,7 @@
 }
 
 .dark {
-  /* Updated dark mode background to darker Georgia Tech gold */
-  --background: oklch(0.35 0.1 85);
+  --background: oklch(0.1 0 0);
   --foreground: oklch(0.98 0 0);
   --card: oklch(0.12 0 0);
   --card-foreground: oklch(0.98 0 0);
