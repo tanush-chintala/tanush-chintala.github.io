@@ -20,7 +20,7 @@ const skillCategories = [
 export function SkillsSection() {
   return (
     <section id="skills" className="min-h-screen flex items-center justify-center px-6 py-20">
-      <div className="max-w-4xl w-full">
+      <div className="max-w-5xl w-full">
         <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-12">Skills</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {skillCategories.map((category) => (

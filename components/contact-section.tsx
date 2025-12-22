@@ -6,7 +6,7 @@ import { Mail, Linkedin, Github } from "lucide-react"
 export function ContactSection() {
   return (
     <section id="contact" className="min-h-screen flex items-center justify-center px-6 py-20">
-      <div className="max-w-4xl w-full">
+      <div className="max-w-5xl w-full">
         <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-12">Contact</h2>
         <Card className="p-12 border-border text-center">
           <div className="space-y-6">
