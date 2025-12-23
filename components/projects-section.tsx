@@ -36,10 +36,7 @@ export function ProjectsSection() {
   return (
     <section id="projects" className="min-h-screen flex items-center justify-center px-6 py-20">
       <div className="max-w-5xl w-full">
-        <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-4">Projects</h2>
-        <p className="text-lg text-foreground mb-12 leading-relaxed">
-          Things I've built while learning, experimenting, and occasionally questioning my life choices.
-        </p>
+        <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-12">Projects</h2>
         <div className="grid gap-8">
           {projects.map((project, index) => (
             <Card
