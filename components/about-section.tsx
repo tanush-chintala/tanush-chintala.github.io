@@ -9,50 +9,47 @@ export function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6 text-lg text-foreground leading-relaxed">
             <p>
-              I'm a Computer Science student at <span className="text-primary font-medium">Georgia Tech</span>, where I
-              spend my days debugging code, attending lectures, and pretending I understand everything about algorithms
-              on the first try.
+              I'm Tanush Chintala, a junior studying Computer Science and
+              recipient of the Stamps President’s Scholarship (top 1% of incoming students)
+              at Georgia Tech.
             </p>
             <p>
-              My journey into tech started with a simple question: "How does this work?" Now, I find myself asking that
-              question about everything—from web apps to machine learning models to why my code works on my machine but
-              nowhere else.
+              My journey into tech has been driven by curiosity and experimentation, 
+              from building full-stack applications in hackathons to developing
+              statistical and ML models to tackle complex problems systematically. I've
+              deeply interested in how sofware and data can be used to design scalable, 
+              high-impact solutions across domains.
             </p>
             <p>
-              When I'm not coding, you'll find me exploring new tech stacks, working on side projects that may or may
-              not make it to production, or trying to explain to my non-CS friends what I actually do.
+              I'm also interested in startup culture, where learning happens quickly and visions are
+              designed, built, and shipped continuously. I enjoy working end-to-end and taking ownership of
+              problems.
             </p>
-            <p className="text-base text-muted-foreground pt-4">
-              <span className="font-medium text-foreground">Current interests:</span> Full-stack development, AI/ML,
-              building things that scale, and occasionally touching grass.
+            <p>
+            Outside of tech, I'm a basketball fan and avid Dallas Mavericks supporter.
+            I also enjoy traveling, exploring different cuisines, and have been spending more time reading.
             </p>
           </div>
 
-          {/* Workspace/Lifestyle Image Placeholder */}
+          {/* Workspace/Lifestyle Images */}
           <div className="space-y-4">
-            <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border-2 border-border bg-muted">
+            <div className="relative w-full rounded-xl overflow-hidden border-2 border-border bg-muted">
               <Image
-                src="/developer-workspace-desk-setup-computer.jpg"
-                alt="Workspace setup"
+                src="/96304011-7AC5-4EFD-AC40-C4283D8167A6_1_105_c.jpeg"
+                alt="Tanush with Georgia Tech Buzz mascot"
                 width={500}
                 height={400}
-                className="object-cover"
+                className="object-cover w-full h-auto"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-background/80 backdrop-blur-sm">
-                <p className="text-sm text-muted-foreground">Add workspace photo</p>
-              </div>
             </div>
-            <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border-2 border-border bg-muted">
+            <div className="relative w-full rounded-xl overflow-hidden border-2 border-border bg-muted">
               <Image
-                src="/georgia-tech-campus-yellow-jackets.jpg"
-                alt="Georgia Tech campus"
+                src="/Piedmont-Park_GettyImages-585832633.webp"
+                alt="Piedmont Park"
                 width={500}
                 height={400}
-                className="object-cover"
+                className="object-cover w-full h-auto"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-background/80 backdrop-blur-sm">
-                <p className="text-sm text-muted-foreground">Add campus/personal photo</p>
-              </div>
             </div>
           </div>
         </div>
