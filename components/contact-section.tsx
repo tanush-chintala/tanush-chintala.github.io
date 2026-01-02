@@ -17,7 +17,7 @@ export function ContactSection() {
             </p>
             <div className="flex justify-center gap-4 pt-6">
               <Button size="lg" asChild>
-                <a href="mailto:your.email@example.com">
+                <a href="mailto:tanushchintala@gmail.com">
                   <Mail className="h-5 w-5 mr-2" />
                   Email Me
                 </a>
@@ -38,7 +38,7 @@ export function ContactSection() {
           </div>
         </Card>
         <footer className="mt-12 text-center text-sm text-muted-foreground">
-          <p>© 2025 Tanush. Built with Next.js and Tailwind CSS.</p>
+          <p>© 2025 Tanush Chintala. Built with Next.js and Tailwind CSS.</p>
         </footer>
       </div>
     </section>
