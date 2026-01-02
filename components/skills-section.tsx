@@ -49,14 +49,13 @@ const skillCategories = [
     ],
   },
   {
-    category: "Concepts & Donmains",
+    category: "Concepts & Domains",
     skills: [
       { name: "NLP", logo: "/skill-logos/nlp.svg" },
       { name: "ETL", logo: "/skill-logos/etl.svg" },
       { name: "CI/CD", logo: "/skill-logos/cicd.svg" },
-
-    ]
-  }
+    ],
+  },
 ]
 
 export function SkillsSection() {
@@ -64,7 +63,7 @@ export function SkillsSection() {
     <section id="skills" className="min-h-screen flex items-center justify-center px-6 py-20">
       <div className="max-w-5xl w-full">
         <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-12">Skills</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {skillCategories.map((category) => (
             <div key={category.category} className="space-y-4">
               <h3 className="text-lg font-semibold text-foreground">{category.category}</h3>
