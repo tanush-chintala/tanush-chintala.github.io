@@ -38,7 +38,7 @@ export function ContactSection() {
           </div>
         </Card>
         <footer className="mt-12 text-center text-sm text-muted-foreground">
-          <p>© 2025 Tanush Chintala. Built with Next.js and Tailwind CSS.</p>
+          <p>© 2026 Tanush Chintala. All rights reserved.</p>
         </footer>
       </div>
     </section>

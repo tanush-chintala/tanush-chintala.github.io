@@ -12,6 +12,7 @@ const skillCategories = [
       { name: "HTML", logo: "/skill-logos/html.svg" },
       { name: "CSS", logo: "/skill-logos/css.svg" },
       { name: "Bash", logo: "/skill-logos/bash.svg" },
+      { name: "C", logo: "/skill-logos/c.svg" },
     ],
   },
   {
@@ -30,7 +31,6 @@ const skillCategories = [
       { name: "PyJWT", logo: "/skill-logos/pyjwt.svg" },
       { name: "AWS CDK", logo: "/skill-logos/aws-cdk.svg" },
       { name: "Apache Spark", logo: "/skill-logos/apache-spark.svg" },
-      { name: "REST APIs", logo: "/skill-logos/rest.svg" },
     ],
   },
   {
@@ -51,9 +51,18 @@ const skillCategories = [
   {
     category: "Concepts & Domains",
     skills: [
-      { name: "NLP", logo: "/skill-logos/nlp.svg" },
-      { name: "ETL", logo: "/skill-logos/etl.svg" },
-      { name: "CI/CD", logo: "/skill-logos/cicd.svg" },
+      { name: "Machine Learning" },
+      { name: "Data Engineering" },
+      { name: "Distributed Systems" },
+      { name: "Software Architecture" },
+      { name: "API Design" },
+      { name: "Database Design" },
+      { name: "Cloud Computing" },
+      { name: "DevOps" },
+      { name: "Full-Stack Development" },
+      { name: "NLP" },
+      { name: "ETL" },
+      { name: "CI/CD" },
     ],
   },
 ]
@@ -67,21 +76,23 @@ export function SkillsSection() {
           {skillCategories.map((category) => (
             <div key={category.category} className="space-y-4">
               <h3 className="text-lg font-semibold text-foreground">{category.category}</h3>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="flex flex-wrap gap-3">
                 {category.skills.map((skill) => (
                   <div
                     key={skill.name}
                     className="flex items-center gap-3 px-3 py-2 bg-secondary rounded-lg border border-border hover:border-primary transition-colors"
                   >
-                    <div className="relative w-6 h-6 flex-shrink-0">
-                      <Image
-                        src={skill.logo}
-                        alt={`${skill.name} logo`}
-                        width={24}
-                        height={24}
-                        className="object-contain"
-                      />
-                    </div>
+                    {"logo" in skill && skill.logo && (
+                      <div className="relative w-6 h-6 flex-shrink-0">
+                        <Image
+                          src={skill.logo}
+                          alt={`${skill.name} logo`}
+                          width={24}
+                          height={24}
+                          className="object-contain"
+                        />
+                      </div>
+                    )}
                     <span className="text-sm text-secondary-foreground">{skill.name}</span>
                   </div>
                 ))}
