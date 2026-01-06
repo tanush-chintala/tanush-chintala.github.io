@@ -22,6 +22,14 @@ const projects = [
     demo: "https://gt-cal-git-main-maya-zhangs-projects.vercel.app",
     image: "/project-logos/gtcal.png",
   },
+  {
+    title: "Cigna Policy Scraper",
+    description:
+      "Web application that scrapes Cigna's medical coverage policy updates, parses PDF documents, and provides a modern interface for viewing and managing medical policies. Features include search, filter, sort functionality, PDF parsing, content extraction from web pages, and data export capabilities.",
+    technologies: ["Python", "Flask", "SQLite", "BeautifulSoup", "Pandas", "PDF Parsing"],
+    github: "https://github.com/tanush-chintala/cigna_policy_scraper",
+    image: "/project-logos/cignahealthcare.png",
+  },
 ]
 
 export function ProjectsSection() {
