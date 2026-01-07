@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Tanush - Computer Science Student",
-  description: "Personal portfolio of Tanush, a Computer Science student at Georgia Tech",
+  title: "Tanush Chintala | Portfolio",
+  description: "Personal portfolio of Tanush Chintala, a Computer Science student at Georgia Tech",
   icons: {
     icon: [
       {
