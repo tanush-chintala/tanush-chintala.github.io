@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tanush-chintala.github.io/sitemap.xml
