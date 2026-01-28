@@ -50,23 +50,29 @@ export function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <button
-            onClick={() => scrollToSection("home")}
+          <a
+            href="#home"
+            onClick={(e) => {
+              scrollToSection("home")
+            }}
             className="text-lg font-semibold text-foreground hover:text-primary transition-colors"
           >
             Tanush Chintala
-          </button>
+          </a>
           <div className="flex gap-8">
             {navItems.map((item) => (
-              <button
+              <a
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                href={`#${item.id}`}
+                onClick={(e) => {
+                  scrollToSection(item.id)
+                }}
                 className={`text-sm transition-colors ${
                   activeSection === item.id ? "text-primary font-medium" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {item.label}
-              </button>
+              </a>
             ))}
           </div>
         </div>
