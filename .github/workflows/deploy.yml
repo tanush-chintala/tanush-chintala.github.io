@@ -25,12 +25,13 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
         with:
-          version: latest
-      
+          # pnpm 11 (current "latest") requires Node 22.13+; pin a major known to work with this lockfile
+          version: 10
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'pnpm'
       
       - name: Install dependencies
