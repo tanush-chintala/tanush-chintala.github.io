@@ -13,6 +13,8 @@ const skillCategories = [
       { name: "CSS", logo: "/skill-logos/css.svg" },
       { name: "Bash", logo: "/skill-logos/bash.svg" },
       { name: "C", logo: "/skill-logos/c.svg" },
+      { name: "C++", logo: "/skill-logos/cpp.svg" },
+      { name: "Assembly" },
     ],
   },
   {
@@ -24,6 +26,7 @@ const skillCategories = [
       { name: "Express.js", logo: "/skill-logos/express.svg" },
       { name: "Flask", logo: "/skill-logos/flask.svg" },
       { name: "TensorFlow", logo: "/skill-logos/tensorflow.svg" },
+      { name: "PyTorch", logo: "/skill-logos/pytorch.svg" },
       { name: "scikit-learn", logo: "/skill-logos/scikit-learn.svg" },
       { name: "pandas", logo: "/skill-logos/pandas.svg" },
       { name: "NumPy", logo: "/skill-logos/numpy.svg" },
@@ -46,6 +49,7 @@ const skillCategories = [
       { name: "Linux", logo: "/skill-logos/linux.svg" },
       { name: "Google Apps Script", logo: "/skill-logos/google-apps-script.svg" },
       { name: "Jupyter", logo: "/skill-logos/jupyter.svg" },
+      { name: "ROS2", logo: "/skill-logos/ros.svg" },
     ],
   },
   {
@@ -63,6 +67,8 @@ const skillCategories = [
       { name: "NLP" },
       { name: "ETL" },
       { name: "CI/CD" },
+      { name: "Computer Vision" },
+      { name: "Voice AI" },
     ],
   },
 ]

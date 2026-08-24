@@ -3,6 +3,31 @@ import Image from "next/image"
 
 const experiences = [
   {
+    period: "Incoming Fall 2026",
+    role: "Software Engineer Intern — Starlink Networking",
+    company: "SpaceX",
+    location: "Redmond, WA",
+    logo: "/spacex_logo.svg",
+    description: [
+      "Joining the Starlink Networking team in Redmond as a Software Engineer Intern for Fall 2026",
+    ],
+    skills: ["Starlink", "Networking"],
+  },
+  {
+    period: "January 2026 — Present",
+    role: "Technical Co-Founder",
+    company: "Kairos Health AI",
+    location: "Houston, TX",
+    logo: "/project-logos/kairos.png",
+    description: [
+      "Architected and deployed real-time AI voice platform, orchestrating streaming speech recognition, LLM tool calling, speech synthesis, conversation-state management, and interruption handling for low-latency patient calls",
+      "Integrated appointment scheduling, insurance verification, and patient communication workflows with dental practice-management systems, encoding clinic-specific operational policies and constraints",
+      "Translated 300+ dental practice insights into automated evaluation pipelines, production monitoring, and reusable configuration systems, turning the initial prototype into a HIPAA-compliant multi-tenant platform",
+      "Secured $210k in funding and grew Kairos to $3k in monthly recurring revenue across 15 dental practices",
+    ],
+    skills: ["AI Voice Agents", "LLM Tool Calling", "Speech Recognition", "HIPAA Compliance", "Multi-Tenant SaaS"],
+  },
+  {
     period: "May 2025 — August 2025",
     role: "Software Development Engineer Intern",
     company: "Amazon Web Services",

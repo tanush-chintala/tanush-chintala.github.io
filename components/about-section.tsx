@@ -16,14 +16,15 @@ export function AboutSection() {
             <p>
               My journey into tech has been driven by curiosity and experimentation, 
               from building full-stack applications in hackathons to developing
-              statistical and ML models to tackle complex problems systematically. I've
-              deeply interested in how sofware and data can be used to design scalable, 
+              statistical and ML models to tackle complex problems systematically. I'm
+              deeply interested in how software and data can be used to design scalable,
               high-impact solutions across domains.
             </p>
             <p>
-              I'm also interested in startup culture, where learning happens quickly and visions are
-              designed, built, and shipped continuously. I enjoy working end-to-end and taking ownership of
-              problems.
+              I'm also drawn to startup culture, where learning happens quickly and visions are
+              designed, built, and shipped continuously — right now I'm living it as the technical
+              co-founder of Kairos Health AI, building real-time AI voice agents for dental practices.
+              I enjoy working end-to-end and taking ownership of problems.
             </p>
             <p>
             Outside of tech, I'm a basketball fan and avid Dallas Mavericks supporter.

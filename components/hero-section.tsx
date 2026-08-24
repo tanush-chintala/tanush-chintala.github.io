@@ -44,13 +44,13 @@ export function HeroSection() {
                 {displayedText}
                 {showCursor && <span className="animate-pulse">|</span>}
               </h1>
-              <p className="text-2xl text-primary font-medium">CS Student @ Georgia Tech</p>
+              <p className="text-2xl text-primary font-medium">CS @ Georgia Tech · Incoming SWE Intern @ SpaceX</p>
             </div>
             <p className="text-lg text-foreground leading-relaxed">
-              I'm passionate about building impactful software solutions, combining technology with creativity. Right now, I'm exploring <strong>ML applications</strong>.
+              I'm passionate about building impactful software solutions, combining technology with creativity. Right now, I'm building <strong>Kairos Health AI</strong>, a real-time AI voice platform for dental practices, and joining <strong>SpaceX's Starlink Networking</strong> team in Fall 2026.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
-              Expected to graduate in May 2027
+              Expected to graduate in May 2028
             </p>
             <div className="flex gap-3 pt-4">
               <Button variant="default" asChild>

@@ -13,6 +13,22 @@ const projects = [
     image: "/project-logos/kairos.png",
   },
   {
+    title: "Tripwire",
+    description:
+      "Point-cloud perception pipeline built in Georgia Tech's DREAM Lab for detecting flat wire obstacles from Intel RealSense D405/D435 RGB-D data. Processes ROS2 bag recordings into PCD frames and applies RANSAC plane segmentation to isolate wires from the ground plane. Evaluated across 24 camera-angle, background, sensor, and wire-size conditions using RGB-derived ground-truth labels and per-frame F1 scores, identifying viewing angle and surface texture as the key failure modes.",
+    technologies: ["Python", "ROS2", "Open3D", "Intel RealSense", "RANSAC", "PCD"],
+    image: "/project-logos/tripwire.svg",
+  },
+  {
+    title: "SlumberScan",
+    description:
+      "AI-powered sleep analysis platform that simplifies the detection of sleep disorders using Polysomnography (PSG) data, helping doctors quickly and accurately diagnose conditions like insomnia, sleep apnea, and narcolepsy. Built on a deep neural network trained on 4K open-source EEG recordings — achieving a 0.91 macro F1 score across sleep apnea and insomnia classes — with a clinician-facing web app that processes PSG uploads into automated triage predictions and pre-read reports in minutes.",
+    technologies: ["React", "Python", "PyTorch", "MongoDB", "Node.js", "JWT", "OpenAI API", "NumPy", "Pandas"],
+    github: "https://github.com/AgastyaK87/hacklytics2025",
+    demo: "https://devpost.com/software/slumberscan",
+    image: "/project-logos/slumberscan.png",
+  },
+  {
     title: "PortfoliGO",
     description:
       "Fantasy stock trading platform that combines machine learning-powered stock analysis with competitive league-based gameplay. Features include league management, snake draft system, real-time ML-powered analytics, portfolio visualization, and commissioner controls. Uses ML models for growth potential, value, and risk assessment.",
@@ -29,15 +45,6 @@ const projects = [
     github: "https://github.com/mayazhang1241/gt-cal",
     demo: "https://gt-cal-git-main-maya-zhangs-projects.vercel.app",
     image: "/project-logos/gtcal.png",
-  },
-  {
-    title: "SlumberScan",
-    description:
-      "AI-powered sleep analysis platform that simplifies the detection of sleep disorders using Polysomnography (PSG) data, helping doctors quickly and accurately diagnose conditions like insomnia, sleep apnea, and narcolepsy. Built with a deep neural network for sleep pattern analysis, interactive web application with secure authentication, and an AI chatbot for sleep-related queries.",
-    technologies: ["React", "Python", "PyTorch", "MongoDB", "Node.js", "JWT", "OpenAI API", "NumPy", "Pandas"],
-    github: "https://github.com/AgastyaK87/hacklytics2025",
-    demo: "https://devpost.com/software/slumberscan",
-    image: "/project-logos/slumberscan.png",
   },
   {
     title: "Eventra",
