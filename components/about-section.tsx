@@ -22,8 +22,8 @@ export function AboutSection() {
             </p>
             <p>
               I'm also drawn to startup culture, where learning happens quickly and visions are
-              designed, built, and shipped continuously — right now I'm living it as the technical
-              co-founder of Kairos Health AI, building real-time AI voice agents for dental practices.
+              designed, built, and shipped continuously — right now I'm living it as a co-founder
+              of Kairos Health (YC F26), building voice AI for dental practices out of San Francisco.
               I enjoy working end-to-end and taking ownership of problems.
             </p>
             <p>

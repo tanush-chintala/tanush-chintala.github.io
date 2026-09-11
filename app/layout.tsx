@@ -10,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Tanush Chintala | Portfolio",
   description:
-    "Personal portfolio of Tanush Chintala — Computer Science student at Georgia Tech, technical co-founder of Kairos Health AI, and incoming SpaceX Starlink Networking software engineer intern.",
+    "Personal portfolio of Tanush Chintala — Computer Science student at Georgia Tech and co-founder of Kairos Health (YC F26), building voice AI for dental practices.",
   icons: {
     icon: [
       {

@@ -44,10 +44,10 @@ export function HeroSection() {
                 {displayedText}
                 {showCursor && <span className="animate-pulse">|</span>}
               </h1>
-              <p className="text-2xl text-primary font-medium">CS @ Georgia Tech · Incoming SWE Intern @ SpaceX</p>
+              <p className="text-2xl text-primary font-medium">Co-Founder @ Kairos Health (YC F26) · CS @ Georgia Tech</p>
             </div>
             <p className="text-lg text-foreground leading-relaxed">
-              I'm passionate about building impactful software solutions, combining technology with creativity. Right now, I'm building <strong>Kairos Health AI</strong>, a real-time AI voice platform for dental practices, and joining <strong>SpaceX's Starlink Networking</strong> team in Fall 2026.
+              I'm passionate about building impactful software solutions, combining technology with creativity. Right now, I'm building <strong>Kairos Health (YC F26)</strong> — voice AI for dental practices — full-time in San Francisco with Y Combinator's Fall 2026 batch.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
               Expected to graduate in May 2028

@@ -5,11 +5,11 @@ import Image from "next/image"
 
 const projects = [
   {
-    title: "Kairos",
+    title: "Kairos Health",
     description:
-      "AI-powered dental receptionist and patient communications platform that answers calls 24/7, reduces no-shows, and optimizes scheduling. Features include live call answering with triage, smart scheduling engine, waitlist auto-fill for same-day cancellations, new patient intake with OCR for insurance cards, and analytics dashboard. HIPAA compliant with EHR integration.",
+      "AI-powered dental receptionist and patient communications platform that answers calls 24/7, reduces no-shows, and optimizes scheduling. Features include live call answering with triage, smart scheduling engine, waitlist auto-fill for same-day cancellations, new patient intake with OCR for insurance cards, and analytics dashboard. HIPAA compliant with EHR integration. Backed by Y Combinator (F26).",
     technologies: ["AI/LLM", "OCR", "HIPAA Compliance"],
-    demo: "https://kairoshealth.dev/",
+    demo: "https://kairoshealthai.com/",
     image: "/project-logos/kairos.png",
   },
   {
