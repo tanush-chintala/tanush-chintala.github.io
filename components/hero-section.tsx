@@ -49,9 +49,6 @@ export function HeroSection() {
             <p className="text-lg text-foreground leading-relaxed">
               I'm passionate about building impactful software solutions, combining technology with creativity. Right now, I'm building <strong>Kairos Health (YC F26)</strong> — voice AI for dental practices — full-time in San Francisco with Y Combinator's Fall 2026 batch.
             </p>
-            <p className="text-base text-muted-foreground leading-relaxed">
-              Expected to graduate in May 2028
-            </p>
             <div className="flex gap-3 pt-4">
               <Button variant="default" asChild>
                 <a href="#contact">Let's Connect</a>
