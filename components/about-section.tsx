@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export function AboutSection() {
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center px-6 py-20">
+    <section id="about" className="flex justify-center px-6 py-16 md:py-24 scroll-mt-8 md:scroll-mt-0">
       <div className="max-w-5xl w-full">
-        <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-12">About Me</h2>
+        <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-8 md:mb-12">About Me</h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6 text-lg text-foreground leading-relaxed">

@@ -75,9 +75,9 @@ const skillCategories = [
 
 export function SkillsSection() {
   return (
-    <section id="skills" className="min-h-screen flex items-center justify-center px-6 py-20">
+    <section id="skills" className="flex justify-center px-6 py-16 md:py-24 scroll-mt-8 md:scroll-mt-0">
       <div className="max-w-5xl w-full">
-        <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-12">Skills</h2>
+        <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-8 md:mb-12">Skills</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {skillCategories.map((category) => (
             <div key={category.category} className="space-y-4">

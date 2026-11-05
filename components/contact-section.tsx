@@ -5,17 +5,17 @@ import { Mail, Linkedin, Github } from "lucide-react"
 
 export function ContactSection() {
   return (
-    <section id="contact" className="min-h-screen flex items-center justify-center px-6 py-20">
+    <section id="contact" className="flex justify-center px-6 py-16 md:py-24 scroll-mt-8 md:scroll-mt-0">
       <div className="max-w-5xl w-full">
-        <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-12">Contact</h2>
-        <Card className="p-12 border-border text-center">
+        <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-8 md:mb-12">Contact</h2>
+        <Card className="px-6 py-10 sm:p-12 border-border text-center">
           <div className="space-y-6">
-            <h3 className="text-3xl font-semibold text-foreground text-balance">Let's Connect!</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            <h3 className="text-2xl sm:text-3xl font-semibold text-foreground text-balance">Let's Connect!</h3>
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto text-balance">
               I'm always open to discussing new opportunities, collaborations, or just having a conversation about
               technology. Feel free to reach out!
             </p>
-            <div className="flex justify-center gap-4 pt-6">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-3 sm:gap-4 pt-4 sm:pt-6">
               <Button size="lg" asChild>
                 <a href="mailto:tanushchintala@gmail.com">
                   <Mail className="h-5 w-5 mr-2" />

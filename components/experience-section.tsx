@@ -71,60 +71,60 @@ const experiences = [
 
 export function ExperienceSection() {
   return (
-    <section id="experience" className="min-h-screen flex items-center justify-center px-6 py-20">
+    <section id="experience" className="flex justify-center px-6 py-16 md:py-24 scroll-mt-8 md:scroll-mt-0">
       <div className="max-w-5xl w-full">
-        <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-12">Experience</h2>
-        <div className="space-y-8">
+        <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-8 md:mb-12">Experience</h2>
+        <div className="space-y-6 md:space-y-8">
           {experiences.map((exp, index) => (
-            <Card key={index} className="p-8 border-border hover:border-primary transition-colors">
+            <Card key={index} className="p-5 sm:p-8 border-border hover:border-primary transition-colors">
               <div className="space-y-4">
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex items-start gap-4 flex-1">
-                    {exp.logo && (
-                      <div className="relative w-16 h-16 flex-shrink-0 rounded-lg overflow-hidden">
-                        <Image
-                          src={exp.logo}
-                          alt={`${exp.company} logo`}
-                          width={64}
-                          height={64}
-                          className="object-cover w-full h-full"
-                        />
-                      </div>
-                    )}
-                    <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-foreground">{exp.company}</h3>
-                      <p className="text-base text-primary font-medium mt-1">{exp.role}</p>
+                <div className="flex items-start gap-4">
+                  {exp.logo && (
+                    <div className="relative size-12 md:size-16 flex-shrink-0 rounded-lg overflow-hidden">
+                      <Image
+                        src={exp.logo}
+                        alt={`${exp.company} logo`}
+                        width={64}
+                        height={64}
+                        className="object-cover w-full h-full"
+                      />
+                    </div>
+                  )}
+                  <div className="flex-1 min-w-0 flex flex-col md:flex-row md:items-start md:justify-between gap-x-6 gap-y-1">
+                    <div className="min-w-0">
+                      <h3 className="text-lg md:text-xl font-semibold text-foreground text-balance">{exp.company}</h3>
+                      <p className="text-base text-primary font-medium mt-0.5 md:mt-1">{exp.role}</p>
+                    </div>
+                    <div className="flex flex-col md:items-end gap-0.5 md:gap-1 text-sm md:text-base text-muted-foreground md:shrink-0 md:text-right">
+                      <span className="md:whitespace-nowrap">
+                        {exp.period.split(" — ").map((part, i, parts) => (
+                          <span key={i}>
+                            <span className="whitespace-nowrap">
+                              {part}
+                              {i < parts.length - 1 && " —"}
+                            </span>
+                            {i < parts.length - 1 && " "}
+                          </span>
+                        ))}
+                      </span>
+                      {exp.location && <span className="md:whitespace-nowrap">{exp.location}</span>}
                     </div>
                   </div>
-                  <div className="flex flex-col items-end gap-1">
-                    <span className="text-base text-muted-foreground whitespace-nowrap">{exp.period}</span>
-                    {exp.location && (
-                      <span className="text-base text-muted-foreground whitespace-nowrap">{exp.location}</span>
+                </div>
+                <div className={exp.logo ? "md:pl-20" : undefined}>
+                  <ul className="space-y-2 text-base text-foreground leading-relaxed list-disc pl-5 marker:text-muted-foreground">
+                    {Array.isArray(exp.description) ? (
+                      exp.description.map((item, idx) => <li key={idx}>{item}</li>)
+                    ) : (
+                      <li>{exp.description}</li>
                     )}
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  {exp.logo && <div className="w-16 flex-shrink-0" />}
-                  <div className="flex-1">
-                    <ul className="space-y-2 text-base text-foreground leading-relaxed list-disc list-inside">
-                      {Array.isArray(exp.description) ? (
-                        exp.description.map((item, idx) => <li key={idx}>{item}</li>)
-                      ) : (
-                        <li>{exp.description}</li>
-                      )}
-                    </ul>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  {exp.logo && <div className="w-16 flex-shrink-0" />}
-                  <div className="flex-1">
-                    <div className="flex flex-wrap gap-2 pt-2">
-                      {exp.skills.map((skill) => (
-                        <span key={skill} className="px-3 py-1 text-sm bg-accent text-accent-foreground rounded-md">
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
+                  </ul>
+                  <div className="flex flex-wrap gap-2 pt-4">
+                    {exp.skills.map((skill) => (
+                      <span key={skill} className="px-3 py-1 text-sm bg-accent text-accent-foreground rounded-md">
+                        {skill}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>

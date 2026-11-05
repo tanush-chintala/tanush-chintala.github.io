@@ -67,23 +67,23 @@ const projects = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="min-h-screen flex items-center justify-center px-6 py-20">
+    <section id="projects" className="flex justify-center px-6 py-16 md:py-24 scroll-mt-8 md:scroll-mt-0">
       <div className="max-w-5xl w-full">
-        <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-12">Projects</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-8 md:mb-12">Projects</h2>
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="overflow-hidden border-border hover:border-primary transition-all hover:shadow-lg flex flex-col"
+              className="overflow-hidden gap-0 py-0 border-border hover:border-primary transition-all hover:shadow-lg flex flex-col"
             >
-              <div className="relative h-56 bg-card rounded-t-lg p-4">
+              <div className="relative h-48 sm:h-56 px-6 pt-6">
                 <div className="relative w-full h-full rounded-lg overflow-hidden flex items-center justify-center">
                   <Image
                     src={project.image || "/placeholder.svg"}
                     alt={`${project.title} preview`}
                     width={500}
                     height={300}
-                    className="object-contain w-auto h-full max-w-full"
+                    className="object-contain w-auto h-auto max-h-full max-w-[85%]"
                   />
                   {(!project.image || project.image === "/placeholder.svg") && (
                     <div className="absolute inset-0 flex items-center justify-center bg-background/70 backdrop-blur-sm">
@@ -97,7 +97,7 @@ export function ProjectsSection() {
                 <div className="space-y-4 flex flex-col flex-grow">
                   <div className="flex items-start justify-between gap-4">
                     <h3 className="text-xl font-semibold text-foreground">{project.title}</h3>
-                    <div className="flex gap-2 flex-shrink-0">
+                    <div className="flex gap-1 flex-shrink-0 -my-1 -mr-2">
                       {project.github && (
                         <Button variant="ghost" size="icon" asChild>
                           <a
